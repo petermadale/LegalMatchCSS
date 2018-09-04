@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css "rel="stylesheet">
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="logo" class="left">
+                    <img src="images/img_logo.jpg" alt="site logo" />
+                </div>
+                <div id="header-sub-heading" class="left">
+                    <p>Find the right lawyer now</p>
+                </div>
+                <div id="header-checklist" class="right">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-ok"></span> No fee to present your case</li>
+                        <li><span class="glyphicon glyphicon-ok"></span> Choose from lawyers in your area</li>
+                        <li><span class="glyphicon glyphicon-ok"></span> A 100% confidential service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <!-- Main Content { -->
+        <section>
+            <h1>Find a Lawyer for your Legal Issue</h1>
+            <h3>Fast, Free and Confidential</h3>
+            <div class="row">
+                <div class="col-md-7">
+                    <form class="custom-form">
+                        <div class="form-group">
+                            <label>Enter Zip Code or City:</label>
+                            <select class="selectpicker" data-live-search="true">
+                                <option>Does not have to be where you live</option>
+                                <option value="00000">Nowheresville, XX 000000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Choose a category:</label>
+                            <select id="option2" class="selectpicker" data-live-search="true" data-toggle="modal" data-target="#screen3">
+                                <option>Click to choose a legal category</option>
+                                <option value="Family">Family</option>
+                                <option value="Criminal Defense">Criminal Defense</option>
+                                <option value="Business">Business</option>
+                                <option value="Personal Injury">Personal Injury</option>
+                                <option value="Bankruptcy & Finances">Bankruptcy &amp; Finances</option>
+                                <option value="Products & Services">Products &amp; Services</option>
+                            </select>
+                        </div>
+                        <p class="text-center">Can’t find your category? <a href="#" data-toggle="modal" data-target="#otherCategories">Click here</a>.</p>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="review">
+                        <h4>Clients review LegalMatch lawyers</h4>
+                        <section class="section-review">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="review-image">
+                                        <img src="images/img_mitchell.png" alt="Mitchell M." />
+                                    </div>
+                                    <div class="review-name">
+                                        <p><strong>Mitchell M.</strong><br>
+                                        <span>Cherry Hill, NJ</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div id="review-title">
+                                        <p class="review-title"><strong>Family Law</strong> 
+                                            <span class="review-star-rating">
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </p>
+                                        <p class="review-content"><em>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</em></p>
+                                        <button class="btn btn-link read-review" data-toggle="modal" data-target="#clientReviews">Read Review <img src="images/img_review_icon.png" alt="Review" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-review">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="review-image">
+                                        <img src="images/img_joel.png" alt="Joel C." />
+                                    </div>
+                                    <div class="review-name">
+                                        <p><strong>Joel C.</strong><br>
+                                        <span>Little Rock, AK</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div id="review-title">
+                                        <p class="review-title"><strong>Job &amp; Employment Law</strong> 
+                                            <span class="review-star-rating">
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </p>
+                                        <p class="review-content"><em>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</em></p>
+                                        <button class="btn btn-link read-review" data-toggle="modal" data-target="#clientReviews">Read Review <img src="images/img_review_icon.png" alt="Review" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-review">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="review-image">
+                                        <img src="images/img_brigida.png" alt="Brigida R." />
+                                    </div>
+                                    <div class="review-name">
+                                        <p><strong>Brigida R.</strong><br>
+                                        <span>Dallas, TX</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div id="review-title">
+                                        <p class="review-title"><strong>Family Law</strong> 
+                                            <span class="review-star-rating">
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span> 
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </p>
+                                        <p class="review-content"><em>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</em></p>
+                                        <button class="btn btn-link read-review" data-toggle="modal" data-target="#clientReviews">Read Review <img src="images/img_review_icon.png" alt="Review" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- } Main Content -->
+    </main>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="footer-logo">
+                    <img src="images/img_logo_footer.jpg" alt="site logo" />
+                    <p>Find the right lawyer now</p>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                   <div class="footer-text-middle">
+                       <ul>
+                           <li>User Agreement</li>
+                           <li>Privacy Policy</li>
+                           <li>Site Map</li>
+                       </ul>
+                        <p>
+                            Copyright 1999-2016 LegalMatch.  All rights reserved.  LegalMatch&reg;, <br>
+                            the LegalMatch logo, and the tradedress are trademarks of LegalMatch.  Patents Pending.
+                        </p>
+                   </div>
+               </div>
+               <div class="col-md-2">
+                   <div class="right">
+                        <img src="images/img_truste_verified.jpg" alt="truste verified" />
+                        <br><br>
+                        <img src="images/img_bbb.jpg" alt="bbb" />
+                   </div>
+               </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="screen3" role="dialog">
+            <div class="modal-dialog modal-custom">
+                <div class="modal-content">
+                    <div class="row">
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <p class="modal-subtitle"><span>3</span> Which <strong>Family law</strong> issue(s) apply to your case?</p>
+                    <div class="checkbox-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Adoptions
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Guardianship
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Child Custody and Visitaion
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Paternity
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Child Support
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Separations
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Divorce
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Spousal Support or Alimony
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-custom">Find a lawyer now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="clientReviews" role="dialog">
+            <div class="modal-dialog modal-custom">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <section>
+                        <h4>Client Reviews</h4>
+                        <div class="client-image">
+                            <img src="images/img_brigida.png" alt="Brigida R." width="120" height="120" />
+                            <p class="client-name"><strong>Brigida R.</strong></p>
+                            <p class="client-address">Dallas, TX</p>
+                            <p class="client-position">Family Law</p>
+                        </div>
+                        <div class="client-rating">
+                            <p>Rating <span class="rating-users">(29 users)</span>
+                                <span class="review-star-rating">
+                                    <span class="glyphicon glyphicon-star"></span> 
+                                    <span class="glyphicon glyphicon-star"></span> 
+                                    <span class="glyphicon glyphicon-star"></span> 
+                                    <span class="glyphicon glyphicon-star"></span> 
+                                    <span class="glyphicon glyphicon-star glyphicon-half-star"></span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="client-rating-detail">
+                            <ul>
+                                <li class="ul-head">Overall
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </span>
+                                </li>
+                                <li>Responded in a timely manner
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star glyphicon-half-star"></span>
+                                    </span>
+                                </li>
+                                <li>Answered questions clearly
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </span>
+                                </li>
+                                <li> Understood needs
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star glyphicon-half-star"></span>
+                                    </span>
+                                </li>
+                                <li>Gave complete and clear information
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </span>
+                                </li>
+                                <li>Knowledgeable in legal area
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star glyphicon-half-star"></span>
+                                    </span>
+                                </li>
+                                <li>Good value for money
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </span>
+                                </li>
+                                <li>Would hire again
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star glyphicon-half-star"></span>
+                                    </span>
+                                </li>
+                                <li>Would recommend to friend
+                                    <span class="review-star-rating">
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span> 
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="client-comment">                      
+                            <p>
+                            <span class="review-star-rating">
+                                <span class="glyphicon glyphicon-star"></span> 
+                                <span class="glyphicon glyphicon-star"></span> 
+                                <span class="glyphicon glyphicon-star"></span> 
+                                <span class="glyphicon glyphicon-star"></span> 
+                                <span class="glyphicon glyphicon-star"></span>
+                            </span>
+                            <strong>by Dexter Marchal, 06/10/2016</strong>
+                            </p>
+                            <p>Deb did a great job. Got my bench warrant set aside ... was sure I was
+                                    going to jail ... phew. Judge seemed to respect her and I got what I </p>
+                        </div>
+                        <a href="#" class="a-modal-close right" data-dismiss="modal">CLOSE</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="otherCategories" role="dialog">
+            <div class="modal-dialog modal-custom">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <section>
+                        <h4>Other Categories
+                            <span>Choose the category that best fits your case</span>
+                        </h4>
+                        <div class="other-categories">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><a href="#">Abuse (Child, Domestic, Sexual)</a></li>
+                                        <li><a href="#">Agencies &amp; Administration</a></li>
+                                        <li><a href="#">Automobile ( DUI, Crimes, Speeding )</a></li>
+                                        <li><a href="#">Automobiles ( Accidents, Insurance )</a></li>
+                                        <li><a href="#">Banking ( Business, Consumer )</a></li>
+                                        <li><a href="#">Bars &amp; Restaurants</a></li>
+                                        <li><a href="#">Business Formation &amp; Dissolution</a></li>
+                                        <li><a href="#">Children (Adoption, Custody, Support)</a></li>
+                                        <li><a href="#">Class Actions (Bad Drugs, Products)</a></li>
+                                        <li><a href="#">Commercial Law and Contracts</a></li>
+                                        <li><a href="#">Commercial Real Estate</a></li>
+                                        <li><a href="#">Constitutional Law</a></li>
+                                        <li><a href="#">Construction (Disputes, Liens)</a></li>
+                                        <li><a href="#">Categories Item Here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><a href="#">Loremipsum Dolorsitamet,</a></li>
+                                        <li><a href="#">Lonsectetur Scingelit  (Baseererkj, Mereit)</a></li>
+                                        <li><a href="#">Miam Euvelit</a></li>
+                                        <li><a href="#">Mempor Auctor (Estiarma, Toeruslej)</a></li>
+                                        <li><a href="#">Nisultricies Dictumest.</a></li>
+                                        <li><a href="#">Ntfring Sodalelit (Aeeticl Restoustoust)</a></li>
+                                        <li><a href="#">Ntvarius Lectus &amp; Congue </a></li>
+                                        <li><a href="#">Pellentesque</a></li>
+                                        <li><a href="#">Rigula Aliquamattis (Nestusotu, Wewreist)</a></li>
+                                        <li><a href="#">Set Tigulempor</a></li>
+                                        <li><a href="#">Sehicula Sedsitamet</a></li>
+                                        <li><a href="#">Seque Nesturre</a></li>
+                                        <li><a href="#">Tollis Gaurissed</a></li>
+                                        <li><a href="#">Tempor Auctor (Estiarma, Toeruslej)</a></li>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
